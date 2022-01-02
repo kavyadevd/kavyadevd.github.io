@@ -37,9 +37,15 @@
 			<h1 id="kavyadevd-logo"><a href="index.html">Kavya<span>.</span></a></h1>
 			<nav id="kavyadevd-main-menu" role="navigation">
 				<ul>
-					<li class="kavyadevd-active"><a href="index.html">Home</a></li>
-					<li><a href="#Projects">Projects</a></li>
-					<li><a href="#Publication">Publication</a></li>
+					<li id="Home" class="kavyadevd-active"><a href="index.html" onClick="(function(){
+    this.addClass('kavyadevd-active'); 
+})();return false;">Home</a></li>
+					<li id="Projects"><a onClick="(function(){
+    this.addClass('kavyadevd-active'); 
+})();return false;" href="#Projects">Projects</a></li>
+					<li id="Publications"><a onClick="(function(){
+    this.addClass('kavyadevd-active'); 
+})();return false;" href="#Publication">Publication</a></li>
 					<!-- <li><a href="#contact">Contact</a></li> -->
 					<!-- <li><a href="about.html">About</a></li> -->
 				</ul>
@@ -63,7 +69,7 @@
 						<div class="desc">
 							<h2 class="subheading">Hello I'm</h2>
 							<h1 class="mb-4">Kavya Devadiga</h1>
-							<p class="mb-4">I am a Robotics Masters's student at the University of Maryland College
+							<p class="mb-4">I am a Robotics Masters' student at the University of Maryland College
 								Park, USA. I like smart autonomous systems. I love to design systems
 								that would automate the dull, dangerous, and mundane tasks and make a difference in
 								human lives for betterment.
