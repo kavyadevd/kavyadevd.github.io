@@ -23,7 +23,6 @@
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
 
-
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -37,9 +36,9 @@
 			<h1 id="kavyadevd-logo"><a href="index.html">Kavya<span>.</span></a></h1>
 			<nav id="kavyadevd-main-menu" role="navigation">
 				<ul>
-					<li id="Home" class="kavyadevd-active"><a href="index.html">Home</a></li>
-					<li id="Projects"><a href="#Projects">Projects</a></li>
-					<li id="Publications"><a href="#Publication">Publication</a></li>
+					<li id="Home" onclick="setClass(this);" class="menu_list kavyadevd-active"><a href="index.html">Home</a></li>
+					<li id="Projects" onclick="setClass(this);" class="menu_list"><a href="#Project">Projects</a></li>
+					<li id="Publications" onclick="setClass(this);" class="menu_list"><a href="#Publication">Publication</a></li>
 					<!-- <li><a href="#contact">Contact</a></li> -->
 					<!-- <li><a href="about.html">About</a></li> -->
 				</ul>
@@ -72,7 +71,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="ftco-section" style="padding-top: 0em;padding-bottom: 1em;" id="Projects">
+			<section class="ftco-section" style="padding-top: 0em;padding-bottom: 1em;" id="Project">
 				<div class="container">
 					<h3 class="mb-4">
 						<p>Projects</p>
@@ -168,6 +167,89 @@ joints.
 								<span class="img img-2" style="background-image: url(images/DVR.JPG);"></span>
 								<div class="text text-2 pt-2 mt-3" id="ecobot">
 									<h3 class="mb-4">
+										<p>Car CAD modelling and simulation</p>
+									</h3>
+									<p class="mb-4">Modelled a car model in Solidworks. Visualized LIDAR points in RViz. 
+										Simulated PID controlled navigation in Gazebo using teleop control as well as publisher-subscriber
+										in ROS. Understood basics of CAD modelling, URDF, XACRO, ROS-config files, ROS controllers and gazebo plugins, and adding 
+										sensors to CAD model.
+									</p>
+									<div class="author mb-4 d-flex align-items-center">
+										<p>October 2021</p>
+									</div>
+									<div class="meta-wrap align-items-center">
+										<div class="half">
+											<p><a href="https://github.com/kavyadevd/Toy_Car_Simulation"
+													class="btn py-2">GitHub Repository<span
+														class="ion-ios-arrow-forward"></span></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<span class="img img-2" alt="Coming soon"
+									style="background-image: url(images/Hybrid.jpg);"></span>
+								<!-- <div class="text text-2 pt-2 mt-3">
+									<h3 class="mb-4">
+										<p>Vader - Pole climbing robot</p>
+									</h3>
+									<p class="mb-4">An Arduino based robot with power screw based pole climbing
+										capabilities. The robot was controlled using a PS2-controller.
+										It also has a vertical gimble with a high power BLDC motor to drive the <a
+											href="#ecobot">ecobot</a>
+										(Project was developed by a team of 7)
+									</p>
+									<div class="author mb-4 d-flex align-items-center">
+										<p>March 2016</p>
+									</div>
+									<div class="meta-wrap align-items-center">
+										<div class="half">
+											<p><a href="https://github.com/kavyadevd/RobotRemoteControl"
+													class="btn py-2">GitHub Repository<span
+														class="ion-ios-arrow-forward"></span></a></p>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<span class="img img-2" style="background-image: url(images/image_3.jpg);"></span>
+								<!-- <div class="text text-2 pt-2 mt-3" id="ecobot">
+									<h3 class="mb-4">
+										<p>PID line follower ecobot</p>
+									</h3>
+									<p class="mb-4">An Arduino based line follower robot with single servo-controlled
+										actuation.
+										The robot has no drive of its own and relied on a second robot to power it
+										without contact using wind
+										thrust. It successfully manoeuvred through a path consisting of turns, slopes
+										and a very low contrast path-following line.
+										(Project code was developed by a sub-team of 3)
+									</p>
+									<div class="author mb-4 d-flex align-items-center">
+										<p>March 2016</p>
+									</div>
+									<div class="meta-wrap align-items-center">
+										<div class="half">
+											<p><a href="https://github.com/kavyadevd/PID-Controller-for-Robocon-2016"
+													class="btn py-2">GitHub Repository<span
+														class="ion-ios-arrow-forward"></span></a></p>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<span class="img img-2" style="background-image: url(images/DVR.JPG);"></span>
+								<div class="text text-2 pt-2 mt-3" id="ecobot">
+									<h3 class="mb-4">
 										<p>DVR - Autonomous Robot</p>
 									</h3>
 									<p class="mb-4">An autonomus - omni directional robot navigation through a
@@ -250,8 +332,6 @@ joints.
 					</div>
 				</div>
 			</section>
-
-
 			<section class="ftco-section" style="padding-top: 0em;padding-bottom: 1em;">
 				<div class="container" id="Publication">
 					<div class="row">
@@ -350,6 +430,10 @@ joints.
 											src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
 											alt="azure" style="width: 1.5em;height: 1.5em;" /> </a>
 								</p>
+						    </div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	</div>
@@ -408,6 +492,12 @@ joints.
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
 
+	<script>
+			function setClass(li_){
+				$('.menu_list').removeClass('kavyadevd-active');
+				$(li_).addClass('kavyadevd-active');
+			}
+	</script>
 </body>
 
 </html>
