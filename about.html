@@ -35,88 +35,148 @@
   <div id="kavyadevd-page">
     <a href="#" class="js-kavyadevd-nav-toggle kavyadevd-nav-toggle"><i></i></a>
     <aside id="kavyadevd-aside" role="complementary" class="js-fullheight text-center">
-      <h1 id="kavyadevd-logo"><a href="index.html">Kavya<span>.</span></a></h1>
-      <nav id="kavyadevd-main-menu" role="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li class="kavyadevd-active"><a href="about.html">About</a></li>
-          <!-- <li><a href="contact.html">Contact</a></li> -->
-        </ul>
-      </nav>
-    </aside>
+			<h1 id="kavyadevd-logo"><a href="index.html">Kavya<span>.</span></a></h1>
+			<nav id="kavyadevd-main-menu" role="navigation">
+				<ul>
+					<li id="Home" onclick="setClass(this);" class="menu_list kavyadevd-active"><a
+							href="index.html">Home</a></li>
+					<li id="Projects" onclick="setClass(this);" class="menu_list"><a href="index.html#Project">Projects</a></li>
+					<li id="Publications" onclick="setClass(this);" class="menu_list"><a
+							href="index.html#Publication">Publication</a></li>
+					<!-- <li><a href="#contact">Contact</a></li> -->					
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div class="kavyadevd-footer">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/kavyashree-devadiga"><i class="icon-linkedin"></i></a></li>
+					<li><a href="https://github.com/kavyadevd"><i class="icon-github"></i></a></li>
+					<li><a href="https://twitter.com/kavyad007?lang=en"><i class="icon-twitter"></i></a></li>
+				</ul>
+			</div>
+		</aside>
     <div id="kavyadevd-main">
       <div class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url(images/bg_4.jpg);"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
           <div class="timeline">
-
-            <h2 class="timeline__item timeline__item--year">1996</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Born</h3>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2013</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Graduated High School</h3>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2014</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Started Bachelor's in Computer Engineering at University of Pune, India</h3>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2016</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Started College Robotics Club</h3>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2017</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Summer Internship</h3>
-              <p class="timeline__blurb">Interned at FinIQ Consulting India Pvt Ltd as web developer.</p>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2018</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Full Stack Software Developer</h3>
-              <p class="timeline__blurb">Joined FinIQ Consulting India Pvt Ltd full time. Full-stack web developer of financial products, for investment banks, based on .Net 4.5 framework using C# and JavaScript. Duties involved developing web apps, REST and SOAP web services, SQL-database scripting, and server management alongside performing secure source code-review, APT-security testing before every client release, unit testing and code maintenance using agile SCRUM methodologies and hosting on Azure and AWS.
-              </p>
-            </div>
-<!-- 
-            <div class="timeline__item">
-              <h3 class="timeline__title">Blah</h3>
-            </div>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Blah 1</h3>
-              <p class="timeline__blurb">Blah 2</p>
-            </div> -->
-
+            <section class="timeline">
             
-
-            <h2 class="timeline__item timeline__item--year">2021</h2>
-
-            <div class="timeline__item">
-              <h3 class="timeline__title">Started Masters of Engineering - Robotics</h3>
-              <p class="timeline__blurb">Joined University of Maryland College Park</p>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2018</h2>
-
-            <!-- <div class="timeline__item">
-              <h3 class="timeline__title">Blah/Circus Arts</h3>
-              <p class="timeline__blurb">Blah.</p>
-            </div>
-
-            <h2 class="timeline__item timeline__item--year">2019</h2> -->
-
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">1996</h3>
+                        <p class="timeline__text--left">
+                            Born
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">2013</h3>
+                        <p class="timeline__text--right">
+                            Graduated High School
+                        </p>
+                    </div>
+                </div>
+            
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint timeline__midpoint--highlight no-top-margin">
+                      <h3 class="timeline__year">2014</h3>
+                        
+                    </div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year timeline__year--mobile">2014</h3>
+                        <p class="timeline__text--right">
+                     Started Bachelor's in Computer Engineering at University of Pune, India
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">2016</h3>
+                        <p class="timeline__text--left">
+                           Co-founded College Robotics Club.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">2017</h3>
+                        <p class="timeline__text--right">
+                       Interned at FinIQ Consulting India Pvt Ltd as web developer.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint timeline__midpoint--highlight no-top-margin">
+                        <h3 class="timeline__year">2018</h3>
+                    </div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year timeline__year--mobile">2009</h3>
+                        <img class="timeline__img" src="" alt="">
+                        <p class="timeline__text--left">
+                            Graduated with Bachelor's in Computer ENgineering
+                        </p>
+                    </div>
+                </div>
+            
+                
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">July 2018</h3>
+                        <p class="timeline__text--left">
+                     Joined FinIQ Consulting India Pvt Ltd full time. Full-stack web developer of financial products, for investment banks, based on .Net 4.5 framework using C# and JavaScript. Duties involved developing web apps, REST and SOAP web services, SQL-database scripting, and server management alongside performing secure source code-review, APT-security testing before every client release, unit testing and code maintenance using agile SCRUM methodologies and hosting on Azure and AWS.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint timeline__midpoint--highlight no-top-margin">
+                      <h3 class="timeline__year">2021</h3>
+                    </div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year timeline__year--mobile">2014</h3>
+                        <p class="timeline__text--right">
+                            New direction.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">Fall 2021</h3>
+                        <img class="timeline__img" src="" alt="">
+                        <p class="timeline__text--left">
+                           Joined University of Maryland College Park for Masters of Engineering - Robotics program
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <!-- <h3 class="timeline__year">Looking for Summer 2022 Internships and collaborations</h3>/ -->
+                        <p class="timeline__text--left">
+                          Looking for Summer 2022 Internships and collaborations
+                        </p>
+                    </div>
+                </div>
+            
+            </section>  
+            
           </div>
       </div>
     </div>
